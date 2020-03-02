@@ -5,7 +5,7 @@ client.search({
   type: 'constituencies',
   body: {
     query: {
-      match: { 'constituencyname': 'Harwich' }
+      match: { 'constituencyname': 'Ipswich' }
       // wildcard: { "constituencyname": "???wich" }
       // regexp: { "constituencyname": ".+wich" }
     }

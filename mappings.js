@@ -14,6 +14,22 @@ client.indices.putMapping({
       },
       'validvotes': {
         'type': 'integer'
+      },
+      'signatures_by_constituency': {
+        'type': 'nested',
+        properties: {
+          'name': {
+            'type': 'keyword'
+          }
+        }
+      },
+      'signatures_by_country': {
+        'type': 'nested',
+        properties: {
+          'name': {
+            'type': 'keyword'
+          }
+        }
       }
     }
   }
